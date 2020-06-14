@@ -4,11 +4,47 @@
     "request":{
       "uri":"/demo"
     },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"这是我们的第一个mock例子",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get",
+      "queries":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
     "response":{
       "headers": {
         "Content-Type": "text/html;charset=gbk"
       },
-      "text":"第一个moco框架demo"
+      "text":"这是get请求张三18岁"
+    }
+
+  },
+  {
+    "description":"这是我们的第一个post例子",
+    "request":{
+      "headers":{
+        "content-type":"application/json"
+      },
+      "uri":"/postdemo",
+      "cookies":{
+        "login":"true"
+      },
+      "method":"post",
+      "json":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text":"这是带参数的post请求"
     }
 
   }
