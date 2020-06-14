@@ -4,7 +4,7 @@
     "request":{
       "uri":"/demo"
     },
-    "redirectTo":"http://www.baidu.com"
+    "redirectTo":"www.baidu.com"
   },
   {
     "description":"这是我们的第一个mock例子",
