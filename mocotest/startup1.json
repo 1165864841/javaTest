@@ -1,10 +1,19 @@
 [
   {
-    "description":"这是我们的第一个mock例子",
+    "description":"获取cookies",
     "request":{
+      "method":"get",
       "uri":"/demo"
     },
-    "redirectTo":"www.baidu.com"
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text":"Cookies获取成功",
+      "cookies":{
+        "login":"true"
+      }
+    }
   },
   {
     "description":"这是我们的第一个mock例子",
@@ -25,26 +34,42 @@
 
   },
   {
-    "description":"这是我们的第一个post例子",
-    "request":{
-      "headers":{
-        "content-type":"application/json"
+    "description": "这是我们的第一个post例子",
+    "request": {
+      "headers": {
+        "content-type": "application/json"
       },
-      "uri":"/postdemo",
+      "uri": "/postdemo",
+      "cookies": {
+        "login": "true"
+      },
+      "method": "post",
+      "json": {
+        "name": "zhangsan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是带参数的post请求"
+    }
+  },
+  {
+    "description":"带Cookies的Get请求",
+    "request":{
+      "uri":"/getCookiesdemo",
       "cookies":{
         "login":"true"
       },
-      "method":"post",
-      "json":{
-        "name":"zhangsan",
-        "age":"18"
-      }
+      "method":"get"
     },
     "response":{
       "headers": {
         "Content-Type": "text/html;charset=gbk"
       },
-      "text":"这是带参数的post请求"
+      "text":"这是带参数的get请求"
     }
 
   }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/httpclient/httpclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javaTest.iml" filepath="$PROJECT_DIR$/.idea/javaTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mocotest/mocotest.iml" filepath="$PROJECT_DIR$/mocotest/mocotest.iml" />
     </modules>
