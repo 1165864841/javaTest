@@ -53,7 +53,10 @@
       "headers": {
         "Content-Type": "text/html;charset=gbk"
       },
-      "text": "这是带参数的post请求"
+      "json": {
+        "zhangsan": "success",
+        "status": "1"
+      }
     }
   },
   {

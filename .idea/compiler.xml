@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="httpclient" />
         <module name="mocotest" />
+        <module name="httpclient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="httpclient" target="1.5" />
-      <module name="mocotest" target="1.5" />
+      <module name="httpclient" target="1.8" />
+      <module name="mocotest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
